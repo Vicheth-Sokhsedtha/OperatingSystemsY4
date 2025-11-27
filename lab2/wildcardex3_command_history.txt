@@ -1,0 +1,252 @@
+    1  lsb_release -a
+    2  mkdir lab2
+    3  cd lab2
+    4  mkdir ex1
+    5  cd ex1
+    6  mkdir etc
+    7  cd etc
+    8  mkdir network
+    9  cd network
+   10  touch interfaces
+   11  cd ..
+   12  mkdir systemed
+   13  cd systemed
+   14  touch resolved.conf
+   15  cd ..
+   16  cd systemed
+   17  mv systemed systemd
+   18  cd ..
+   19  mv systemed systemd
+   20  cd systemd
+   21  cd resolved.conf
+   22  touch resolved.conf
+   23  cd resolved.conf
+   24  tree
+   25  sudo apt install
+   26  tree
+   27  sudo apt install tree
+   28  sudo apt update
+   29  sudo apt install tree
+   30  tree
+   31  cd ../../../
+   32  tree
+   33  cd ..
+   34  tree
+   35  cd lab2/ex1/etc/network/systemd
+   36  cd ~/lab2/ex1/etc/network/systemd
+   37  cd lab2
+   38  cd ex1
+   39  cd etc
+   40  cd network
+   41  cd systemd
+   42  cd ..
+   43  tree
+   44  cd systemd
+   45  mkdir system
+   46  touch system.conf
+   47  mkdir user
+   48  touch user.conf
+   49  tree
+   50  cd ..
+   51  mkdir udev
+   52  cd udev
+   53  mkdir rules.d
+   54  touch udev.conf
+   55  tree
+   56  cd ../../
+   57  touch ex1_command_history.txt
+   58  mkdir home
+   59  cd home
+   60  mkdir lost+found
+   61  mkdir user
+   62  cd user
+   63  mkdir Documents
+   64  cd ../../
+   65  touch result1.txt
+   66  cd ..
+   67  mkdir ex2
+   68  cd ex2
+   69  touch ex2_command_history.txt
+   70  cd ../../
+   71  tree
+   72  cd lab2
+   73  tree
+   74  history
+   75  tree
+   76  mkdir lab3
+   77  cd lab3
+   78  cd ..
+   79  scp -r lab3/ gic-vicheth-sokhsedtha@192.168.21.87:/gic-vicheth-sokhsedtha@i4gic-os
+   80  mv lab3
+   81  rm lab3
+   82  cd lab3
+   83  rm lab3
+   84  cd lab3
+   85  cd CopyingFolder
+   86  tree
+   87  mkdir CopyingFolder
+   88  mkdir Desktop
+   89  mkdir Documents
+   90  cd CopyingFolder
+   91  touch copied.txt
+   92  cd ..
+   93  cp CopyingFolder/copied.txt Documents
+   94  tree
+   95  cd Documents
+   96  touch {one..five}.txt
+   97  tree
+   98  rm {one..five}.txt
+   99  tree
+  100  touch{one,two,three.four.five}.txt
+  101  touch {one,two,three.four.five}.txt
+  102  tree
+  103  rm three.four.five.txt
+  104  tree
+  105  touch {three,four,five}.txt
+  106  tree
+  107  cd ..
+  108  cd Documents
+  109  cp *.txt../CopyingFolder
+  110  cp *.txt ../CopyingFolder
+  111  tree
+  112  cd ..
+  113  tree
+  114  cp -r CopyingFolder Desktop
+  115  tree
+  116  cd Documents
+  117  touch {one,two,three,four,five}_document.txt
+  118  tree
+  119  cat *_document.txt
+  120  tree
+  121  mv one_document.txt document_un.txt
+  122  tree
+  123  mv two_document.txt document_deux.txt
+  124  mv three_document.txt document_trois.txt
+  125  mv four_document.txt document_quatre.txt
+  126  mv five_document.txt document_cinque.txt
+  127  tree
+  128  cd ..
+  129  mkdir MoveFolder
+  130  mv document_*.txt MoveFolder
+  131  mv document_*.txt/Documents MoveFolder
+  132  tree
+  133  cd Documents
+  134  mv document_*.txt MoveFolder
+  135  mv document_*.txt MoveFolder/
+  136  mv document_*.txt ../MoveFolder/
+  137  cd ..
+  138  tree
+  139  cd Desktop
+  140  mkdir FrenchFolder
+  141  cd ..
+  142  cd MoveFolder
+  143  mv document_*.txt ../../FrenchFolder
+  144  mv document_*.txt ../FrenchFolder
+  145  cd ..
+  146  tree
+  147  cd MoveFolder
+  148  mv document_*.txt /Desktop/FrenchFolder
+  149  mv document_*.txt ../Desktop/FrenchFolder
+  150  cd ..
+  151  tree
+  152  cd ..
+  153  tree
+  154  cd lab3
+  155  tree
+  156  history
+  157  cd Desktop
+  158  cd FrenchFolder
+  159  mv document_deux.txt
+  160  cd../../../
+  161  cd ../../../
+  162  rm ~lab3/Desktop/FrenchFolder/document_deux.txt
+  163  rm ~/lab3/Desktop/FrenchFolder/document_deux.txt
+  164  tree
+  165  cd lab3
+  166  tree
+  167  cd Documents
+  168  mkdir EmptyFolder
+  169  cd EmptyFolder
+  170  touch deletefile.txt
+  171  mkdir DeleteFolder
+  172  rm DeleteFolder
+  173  tree
+  174  rm -r DeleteFolder
+  175  cd ..
+  176  rm -r EmptyFolder
+  177  tree
+  178  cd ../../
+  179  rm ~/lab3/Desktop/FrenchFolder/*.txt
+  180  cd lab3
+  181  tree
+  182  history
+  183  cd ..
+  184  cat ~/lab3/wildcardex1_command_history.txt
+  185  cd ~
+  186  history > ~/lab3/wildcardex1_command_history.txt
+  187  cat ~/lab3/wildcardex1_command_history.txt
+  188  cd lab3
+  189  history > ~/lab3/wildcardex1_command_history.txt
+  190  cat ~/lab3/wildcardex1_command_history.txt
+  191  history > wildcardex1_command_history.txt
+  192  ls
+  193  cat wildcardex1_command_history.txt
+  194  history | grep lab3 > lab3_only_history.txt
+  195  mkdir wildcard_lab
+  196  cd wildcard_lab
+  197  touch {a,b,ab,abc}.txt
+  198  touch xyz.log
+  199  touch data.csv
+  200  tree
+  201  ls *.txt
+  202  ls *.csv
+  203  ls *.log
+  204  ls ?.txt
+  205  cd ..
+  206  mkdir backup
+  207  cp wildcard_lab/*.txt backup/
+  208  tree
+  209  cp wildcard_lab/???.* backup/
+  210  tree
+  211  rm wildcard_lab/?.*
+  212  tree
+  213  rm backup/*
+  214  tree
+  215  cd wildcard_lab
+  216  touch {1..3}.txt
+  217  mv {1..3}.txt file{1..3}.txt
+  218  rm {1..3}.txt file{1..3}.txt
+  219  rm {1..3}.txt
+  220  tree
+  221  touch file{1..3}.txt
+  222  touch [1-3]file.txt
+  223  tree
+  224  rm [1-3]file.txt
+  225  tree
+  226  touch [13]file.txt
+  227  tree
+  228  rm [13]file.txt
+  229  touch {1..3}file.txt
+  230  tree
+  231  cd ../../
+  232  mkdir -p ~/lab3
+  233  history > ~/lab3/wildcardex3_command_history.txt
+  234  ls ~/lab3
+  235  cat ~/lab3/wildcardex3_command_history.txt
+  236  history | grep wildcard_lab > ~/lab3/wildcardex3_command_history.txt
+  237  cd lab3
+  238  tree
+  239  rmdir wildcardex1_command_history.txt
+  240  rm wildcardex1_command_history.txt
+  241  rm wildcardex3_command_history.txt
+  242  tree
+  243  mkdir logs
+  244  cd logs
+  245  touch log2023010[1-5].txt
+  246  tree
+  247  rm log2023010[1-5].txt
+  248  touch {log20230101,log20230102,log20230103,log20230104,log20230105}.txt
+  249  tree
+  250  ls log202301*.txt
+  251  ls log2023010[13579].txt
+  252  history > ~/lab2/wildcardex3_command_history.txt

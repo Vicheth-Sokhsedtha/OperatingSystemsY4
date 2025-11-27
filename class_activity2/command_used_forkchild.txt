@@ -1,0 +1,15 @@
+  303  nano forkchild.c
+  304  gcc -o forkchild forkchild.c
+  305  nano forkchild.c
+  306  gcc -o forkchild forkchild.c
+  307  nano forkchild.c
+  308  gcc -o forkchild forkchild.c
+  309  ./forkchild
+  310  ./forkchild > result_forkchild.txt
+  311  cat result_forkchild.txt
+  312  cd ..
+  313  cd class_activity1
+  314  history
+  315  cd ..
+  316  cd class_activity2
+  317  history | tail -n 15 > command_used_forkchild.txt

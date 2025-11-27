@@ -1,0 +1,50 @@
+  348  nano sender.c
+  349  nano receiver.c
+  350  nano common.h
+  351  gcc -o sender sender.c
+  352  gcc -o receiver receiver.c
+  353  ./sender
+  354  ./receiver
+  355  ./receiver > result-mq-ipc.txt
+  356  cd ..
+  357  tree
+  358  cd MQ-IPC
+  359  cat result-mq-ipc.txt
+  360  nano sender.c
+  361  nano receiver.c
+  362  gcc -o receiver receiver.c -lrt
+  363  gcc -o sender sender.c -lrt
+  364  ./sender
+  365  ./receiver
+  366  nano sender.c
+  367  cd classActivity3
+  368  tree
+  369  cd ..
+  370  lab4
+  371  cd lab4
+  372  tree
+  373  sort contents.txt >> contents-sorted.txt
+  374  tail /etc/passed > ~/lab4/Documents/newfile.txt
+  375* 
+  376  tail /etc/passed > ~/lab4/Documents/newfile.txt
+  377  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  378  wc -w < contents.txt >> ~/lab4/filed2.txt
+  379  head -n 5 /etc/passwd | sort -r
+  380  tail -n 9 contents.txt | wc -m
+  381  find /user/share -name test
+  382  rm -r lab4
+  383  cd ..
+  384  rm -r lab4
+  385  tree
+  386  mmkdir lab4
+  387  mkdir lab4
+  388  cd lab4
+  389  ls -l ~ > ~/lab4/contents.txt
+  390  tree
+  391  mkdir Documents
+  392  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  393  wc -w < contents.txt >> ~/lab4/filed2.txt
+  394  head -n 5 /etc/passwd | sort -r
+  395  tail -n 9 contents.txt | wc -m
+  396  find /usr/share -name test
+  397  history | tail -n 50 > ~/lab4/commands_history.txt

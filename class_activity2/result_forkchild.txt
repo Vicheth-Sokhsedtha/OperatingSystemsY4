@@ -1,0 +1,6 @@
+total 20
+-rwxr-xr-x 1 vichethsokhsedtha vichethsokhsedtha 16176 Nov 19 22:43 forkchild
+-rw-r--r-- 1 vichethsokhsedtha vichethsokhsedtha   510 Nov 19 22:43 forkchild.c
+-rw-r--r-- 1 vichethsokhsedtha vichethsokhsedtha     0 Nov 19 22:45 result_forkchild.txt
+Parent process waiting for child...
+Child finished.
