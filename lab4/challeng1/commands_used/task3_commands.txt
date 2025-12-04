@@ -1,0 +1,20 @@
+  435  wc -l original_log/*.log
+  436  head -n 5 original_log/access.log
+  437  tail -n 5 original_log/access.log
+  438  {   echo "Line count:";   wc -l original_log/access.log;   echo;   echo "First 5 lines:";   head -n 5 original_log/access.log;   echo;   echo "Last 5 lines:";   tail -n 5 original_log/access.log; } > analysis/task1_basic_stats.txt
+  439  history | tail -n 20 > commands_used/task1_commands.txt
+  440  tree
+  441  mv command_used commands_used
+  442  tree
+  443  history | tail -n 20 > commands_used/task1_commands.txt
+  444  tree
+  445  grep " 40[13] " original_log/access.log
+  446  grep " 40[13] " original_log/access.log | awk '{print $1}' | sort | uniq -c | sort -nr
+  447  {   echo "Failed login entries:";   grep " 40[13] " original_log/access.log;   echo;   echo "Count per IP:";   grep " 40[13] " original_log/access.log | awk '{print $1}' | sort | uniq -c | sort -nr; } > analysis/task2_failed_logins.txt
+  448  history | tail -n 20 > commands_used/task2_commands.txt
+  449  tree
+  450  grep -i "bot\|scan\|exploit\|curl\|wget" original_log/access.log
+  451  grep -i "/wp-admin\|/admin\|/\.git" original_log/access.log
+  452  grep -i "cmd=" original_log/access.log
+  453  {   echo "Suspicious user agents:";   grep -i "bot\|scan\|exploit\|curl\|wget" original_log/access.log;   echo;   echo "Sensitive paths:";   grep -i "/wp-admin\|/admin\|/\.git" original_log/access.log;   echo;   echo "Suspicious query parameters:";   grep -i "cmd=" original_log/access.log; } > analysis/task3_suspicious_agents.txt
+  454  history | tail -n 20 > commands_used/task3_commands.txt

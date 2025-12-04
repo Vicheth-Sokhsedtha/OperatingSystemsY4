@@ -1,0 +1,1 @@
+grep "department:IT" data/employees.txt > results/task1_IT_staff.txt

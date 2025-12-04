@@ -1,0 +1,1 @@
+grep ",j" data/employees.txt | cut -d "," -f3 > results/task3_j_emails.txt

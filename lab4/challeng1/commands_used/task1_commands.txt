@@ -1,0 +1,20 @@
+  424  wc -l original_log/*.log
+  425  head -n 5 original_log/access.log
+  426  tail -n 5 original_log/access.log
+  427  clear
+  428  cd original_log
+  429  rm -r access.log
+  430  tree
+  431  nano access.log
+  432  ls original_log/ | wc -l
+  433  cd ..
+  434  ls original_log/ | wc -l
+  435  wc -l original_log/*.log
+  436  head -n 5 original_log/access.log
+  437  tail -n 5 original_log/access.log
+  438  {   echo "Line count:";   wc -l original_log/access.log;   echo;   echo "First 5 lines:";   head -n 5 original_log/access.log;   echo;   echo "Last 5 lines:";   tail -n 5 original_log/access.log; } > analysis/task1_basic_stats.txt
+  439  history | tail -n 20 > commands_used/task1_commands.txt
+  440  tree
+  441  mv command_used commands_used
+  442  tree
+  443  history | tail -n 20 > commands_used/task1_commands.txt

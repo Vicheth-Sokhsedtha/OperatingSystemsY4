@@ -1,0 +1,20 @@
+  441  mv command_used commands_used
+  442  tree
+  443  history | tail -n 20 > commands_used/task1_commands.txt
+  444  tree
+  445  grep " 40[13] " original_log/access.log
+  446  grep " 40[13] " original_log/access.log | awk '{print $1}' | sort | uniq -c | sort -nr
+  447  {   echo "Failed login entries:";   grep " 40[13] " original_log/access.log;   echo;   echo "Count per IP:";   grep " 40[13] " original_log/access.log | awk '{print $1}' | sort | uniq -c | sort -nr; } > analysis/task2_failed_logins.txt
+  448  history | tail -n 20 > commands_used/task2_commands.txt
+  449  tree
+  450  grep -i "bot\|scan\|exploit\|curl\|wget" original_log/access.log
+  451  grep -i "/wp-admin\|/admin\|/\.git" original_log/access.log
+  452  grep -i "cmd=" original_log/access.log
+  453  {   echo "Suspicious user agents:";   grep -i "bot\|scan\|exploit\|curl\|wget" original_log/access.log;   echo;   echo "Sensitive paths:";   grep -i "/wp-admin\|/admin\|/\.git" original_log/access.log;   echo;   echo "Suspicious query parameters:";   grep -i "cmd=" original_log/access.log; } > analysis/task3_suspicious_agents.txt
+  454  history | tail -n 20 > commands_used/task3_commands.txt
+  455  tree
+  456  awk '{print $1}' original_log/access.log | sort | uniq -c | sort -nr | head -n 5
+  457  awk '{print $7}' original_log/access.log | sort | uniq -c | sort -nr | head
+  458  awk -F: '{print $2}' original_log/access.log | sort | uniq -c | sort -nr
+  459  {   echo "Top 5 IPs:";   awk '{print $1}' original_log/access.log | sort | uniq -c | sort -nr | head -n 5;   echo;   echo "Most targeted URLs:";   awk '{print $7}' original_log/access.log | sort | uniq -c | sort -nr | head;   echo;   echo "Requests per hour:";   awk -F: '{print $2}' original_log/access.log | sort | uniq -c | sort -nr; } > analysis/task4_top_ips.txt
+  460  history | tail -n 20 > commands_used/task4_commands.txt
