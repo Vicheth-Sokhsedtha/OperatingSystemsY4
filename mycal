@@ -1,0 +1,16 @@
+#!/bin/bash
+
+expr="$1"
+
+if [[ -z "$expr" ]]; then
+  echo "Usage: ./mycal 2+3 | 4-1 | 6/2 | 3*5"
+  exit 1
+fi
+
+result=$(echo "scale=2; $expr" | bc 2>/dev/null)
+
+if [[ $? -ne 0 ]]; then
+  echo "Invalid expression"
+else
+  echo "Result = $result"
+fi

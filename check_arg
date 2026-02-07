@@ -1,0 +1,16 @@
+#!/bin/bash
+
+name="$1"
+
+if [ -z "$name" ]; then
+  echo "Usage: ./check_prompt filename"
+  exit 1
+fi
+
+if [ -f "$name" ]; then
+  echo "It is a regular file"
+elif [ -d "$name" ]; then
+  echo "It is a directory"
+else
+  echo "It is another type of file or does not exist"
+fi
